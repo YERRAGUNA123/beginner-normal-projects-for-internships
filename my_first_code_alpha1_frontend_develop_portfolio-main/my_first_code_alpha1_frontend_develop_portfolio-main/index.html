@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" onclick="toggleTheme()">🌙</button>
+
+    <!-- Header Section -->
+    <header id="header">
+      <h1>YERRA GUNA SHEKHAR</h1>
+      <p>Front-End Developer | Designer | APP DEVELOPER</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <img
+        src="https://assets.onecompiler.app/424h56q45/42x2d3qwt/edb0a407-b0b3-4234-afbf-9b2c48731cf2.jpg"
+        alt="Your Photo"
+        class="profile-img"
+      />
+      <h2>About Me</h2>
+      <p>
+        Yerra Guna Shekhar Electronics and Communication Engineer 𝘈𝘯𝘥𝘩𝘳𝘢
+        𝘱𝘳𝘢𝘥𝘦𝘴𝘩. , India With a recent BTech in Electronics and Communication
+        Engineering from Centurion University of Technology and Management, I
+        bring a solid foundation in electronic design, signal processing, and
+        real-time health feedback systems. My academic projects, particularly on
+        low-power sense amplifier-based flip-flops, reflect my dedication to
+        innovative, energy-efficient solutions in electronics. I’m proficient in
+        Python, C++, and object-oriented programming, and I enjoy solving
+        complex engineering challenges. My project experience also includes
+        developing a concept for BioMirror, a health feedback system using
+        augmented reality (AR), which allowed me to apply my technical skills to
+        emerging tech in healthcare. I’m actively seeking opportunities where I
+        can contribute to cutting-edge electronics projects, particularly in
+        signal amplification and sensing technology. As I continue developing my
+        expertise, I’m open to roles that offer growth and the chance to work
+        alongside talented professionals in the industry. Skills: Programming:
+        Python, C++, Embedded Systems Technical: Circuit Design, Low-Power
+        Electronics, Signal Amplification Project Highlights: Low-Power Sense
+        Amplifier Design, AR Health Feedback Concept
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill" data-skill="HTML">
+        HTML
+        <div class="bar"><div class="fill" style="width: 90%"></div></div>
+      </div>
+      <div class="skill" data-skill="CSS">
+        CSS
+        <div class="bar"><div class="fill" style="width: 85%"></div></div>
+      </div>
+      <div class="skill" data-skill="JavaScript">
+        JavaScript
+        <div class="bar"><div class="fill" style="width: 80%"></div></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="project-container"></div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formFeedback"></p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
