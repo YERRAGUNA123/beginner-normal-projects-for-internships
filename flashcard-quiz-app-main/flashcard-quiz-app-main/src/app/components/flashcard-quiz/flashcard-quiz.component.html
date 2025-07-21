@@ -1,0 +1,10 @@
+<div class="flashcard-quiz">
+<app-flashcard [flashcard]="flashcards[currentFlashcardIndex]"></app-flashcard>
+
+
+<div class="controls">
+  <button (click)="previousFlashcard()" [disabled]="currentFlashcardIndex === 0">Previous</button>
+  <button (click)="nextFlashcard()" [disabled]="currentFlashcardIndex === flashcards.length - 1">Next</button>
+</div>
+</div>
+
