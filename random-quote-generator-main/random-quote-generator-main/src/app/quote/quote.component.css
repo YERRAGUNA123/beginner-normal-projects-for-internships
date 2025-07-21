@@ -1,0 +1,28 @@
+.quote-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.quote-text {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.generate-btn,
+.share-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.generate-btn:hover,
+.share-btn:hover {
+  background-color: #0056b3;
+}
