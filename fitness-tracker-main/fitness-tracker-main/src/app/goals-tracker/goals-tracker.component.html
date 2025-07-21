@@ -1,0 +1,19 @@
+<h2>Set Fitness Goals</h2>
+<form (ngSubmit)="addGoal()">
+  <label for="goalType">Goal Type:</label>
+  <input id="goalType" [(ngModel)]="goalType" name="goalType" required />
+
+  <label for="goalTarget">Target (minutes):</label>
+  <input id="goalTarget" type="number" [(ngModel)]="goalTarget" name="goalTarget" required />
+
+  <button type="submit">Add Goal</button>
+</form>
+
+<div *ngIf="goals.length">
+  <h3>Your Goals:</h3>
+  <ul>
+    <li *ngFor="let goal of goals">
+      {{ goal.type }} - {{ goal.target }} min
+    </li>
+  </ul>
+</div>

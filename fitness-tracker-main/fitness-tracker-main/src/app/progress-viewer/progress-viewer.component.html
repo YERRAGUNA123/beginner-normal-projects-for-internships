@@ -1,0 +1,14 @@
+<h2>Progress Viewer</h2>
+<div *ngIf="workouts.length; else noData">
+  <h3>Your Recorded Workouts:</h3>
+  <ul>
+    <li *ngFor="let workout of workouts">
+      {{ workout.type }} - {{ workout.duration }} min on {{ workout.date | date:'shortDate' }}
+    </li>
+  </ul>
+  <h4>Total Duration: {{ getTotalDuration() }} minutes</h4>
+</div>
+
+<ng-template #noData>
+  <p>No workouts recorded yet. Start by recording your workouts!</p>
+</ng-template>

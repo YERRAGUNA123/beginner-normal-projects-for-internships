@@ -1,0 +1,19 @@
+<h2>Record a Workout</h2>
+<form (ngSubmit)="recordWorkout()">
+  <label for="workoutType">Workout Type:</label>
+  <input id="workoutType" [(ngModel)]="workoutType" name="workoutType" required />
+
+  <label for="workoutDuration">Duration (minutes):</label>
+  <input id="workoutDuration" type="number" [(ngModel)]="workoutDuration" name="workoutDuration" required />
+
+  <button type="submit">Record Workout</button>
+</form>
+
+<div *ngIf="workouts.length">
+  <h3>Recorded Workouts:</h3>
+  <ul>
+    <li *ngFor="let workout of workouts">
+      {{ workout.type }} - {{ workout.duration }} min on {{ workout.date | date:'short' }}
+    </li>
+  </ul>
+</div>
